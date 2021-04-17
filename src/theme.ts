@@ -1,15 +1,15 @@
 const colors = {
   almostBlack: "#181A1B",
-  lightBlack: "#2F3336",
+  lightBlack: "#18202e",
   almostWhite: "#E6E6E6",
   white: "#FFF",
   white10: "rgba(255, 255, 255, 0.1)",
   black: "#000",
   black10: "rgba(0, 0, 0, 0.1)",
   primary: "#1AB6FF",
-  greyLight: "#F4F7FA",
+  greyLight: "#f0f3f8",
   grey: "#E8EBED",
-  greyMid: "#C5CCD3",
+  greyMid: "#f0f3f8",
   greyDark: "#DAE1E9",
 };
 
@@ -22,7 +22,7 @@ export const base = {
   fontWeight: 400,
   zIndex: 100,
   link: colors.primary,
-  placeholder: "#B1BECC",
+  placeholder: "#9ea7b8",
   textSecondary: "#4E5C6E",
   textLight: colors.white,
   textHighlight: "#b3e7ff",

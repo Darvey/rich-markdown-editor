@@ -49,6 +49,7 @@ import Table from "./nodes/Table";
 import TableCell from "./nodes/TableCell";
 import TableHeadCell from "./nodes/TableHeadCell";
 import TableRow from "./nodes/TableRow";
+import LineBreak from "./nodes/LineBreak";
 
 // marks
 import Bold from "./marks/Bold";
@@ -279,6 +280,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
         new Notice({
           dictionary,
         }),
+        new LineBreak(),
         new Heading({
           dictionary,
           onShowToast: this.props.onShowToast,
@@ -1119,6 +1121,23 @@ const StyledEditor = styled("div")<{
     height: 0;
     border: 0;
     border-top: 1px solid ${props => props.theme.horizontalRule};
+  }
+  
+  .separator {
+    margin-top: 16px;
+    padding-top: 16px;
+    margin-bottom: 38px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .separator-item {
+    height: 3px;
+    width: 3px;
+    background-color: black;
+    margin-right: 20px;
   }
 
   code {

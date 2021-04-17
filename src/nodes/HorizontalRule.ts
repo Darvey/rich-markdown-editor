@@ -11,7 +11,14 @@ export default class HorizontalRule extends Node {
       group: "block",
       parseDOM: [{ tag: "hr" }],
       toDOM() {
-        return ["hr"];
+        // return ["hr"];
+        return [
+          "div",
+          { class: "separator" },
+          ["span", { class: "separator-item" }],
+          ["span", { class: "separator-item" }],
+          ["span", { class: "separator-item" }],
+        ];
       },
     };
   }

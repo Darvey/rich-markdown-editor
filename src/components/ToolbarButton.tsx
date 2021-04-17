@@ -16,6 +16,12 @@ export default styled.button<Props>`
   opacity: 0.7;
   outline: none;
 
+  svg {
+    fill: #fff !important;
+    ${props =>
+      props.active ? "fill: #F05637 !important;" : "fill: #fff !important;"};
+  }
+
   &:first-child {
     margin-left: 0;
   }
